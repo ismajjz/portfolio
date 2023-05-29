@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isma | Developer</title>
+    <link rel="icon" href="./imagenes/ismajjzx.svg">
+    <link rel="stylesheet" href="./indexcss/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+</head>
+<body class="fondo">
+    <!--NAVBAR-->
+    <header id="seccion1">
+        <a href="#" class="logo">My portfolio</a>
+        <ul>
+            <li id="inicio"><a href="#">Inicio</a></li>
+            <li id="about-li"><a href="#">Sobre mi</a></li>
+            <li id="descargas"><a href="#">Descargas</a></li>
+            <li id="redes"><a href="#">Redes</a></li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+    <!--ABOUT ME-->
+    <div id="contenido2" class="about-wrapper">
+      <div class="about-left">
+        <div class="about-left-content">
+          <div>
+            <div class="shadow">
+              <div class="about-img">
+                <img src="./imagenes/git.jpg" alt="about image">
+              </div>
+            </div>
+    
+            <h2 id="seccion-2">Ismael Sanchez / 23 años</h2>
+            <h3>Web developer</h3>
+          </div>
+    
+
+        </div>
+    
+      </div>
+    
+      <div class="about-right">
+        <h1>Hola<span>!</span></h1>
+        <h2>Este soy yo y esto es lo que hago!</h2>
+        <div class="about-btns">
+          <button onclick="abrirVentana()" type="button" class="btn btn-pink">CV Virtual</button>
+          <button type="button" class="btn btn-white"><a href="./archivos/cv.zip" download target="_blank"
+              style="text-decoration: none;">Descargar</a></button>
+        </div>
+    
+        <div class="about-para">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta excepturi vel deleniti! Magnam ipsa ea illum.
+            Impedit,
+            dignissimos? Dolore rem corrupti consequatur eos adipisci voluptatum at maxime! Quibusdam, aperiam provident.
+          </p>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus commodi
+            enim sit veniam quidem facere hic illum eius tempora aut? Illum nam fugit eum fugiat ab quo at mollitia
+            doloremque.</p>
+        </div>
+        <div class="credit">Todos los derechos reservados © <span style="color:tomato">❤</span> by <a
+            href="https://twitter.com/ismajjzxcsgo">Ismajjzx.dev</a></div>
+      </div>
+    </div>
+<!--
+            <ul class = "icons">
+                  <li><a href="https://www.facebook.com/profile.php?id=100013127809427" target="_blank"><i class = "fab fa-facebook-f"></a></i></li>
+                  <li><a href="https://twitter.com/ismaelsanchzz" target="_blank"><i class = "fab fa-twitter"></a></i></li>
+                  <li><a href="https://www.linkedin.com/in/german-ismael-sanchez-6b2a16217/" target="_blank"><i class = "fab fa-linkedin"></a></i></li>
+                  <li><a href="https://www.instagram.com/ismaelsanchzz/" target="_blank"><i class = "fab fa-instagram"></a></i></li>
+                </ul>
+    -->
+    <script>
+      // Script de scroll hasta la seccion inicio
+      var inicioButton = document.getElementById('inicio');
+      inicioButton.addEventListener('click', function(e) {
+        e.preventDefault(); 
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    </script>
+
+    <script> //Script de scroll hasta la seccion de sobre mi 
+      var aboutButton = document.getElementById('about-li');
+      aboutButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        var section = document.getElementById('contenido2');
+        section.scrollIntoView({ behavior: 'smooth' });
+      });
+    </script>
+</body>
+</html>
